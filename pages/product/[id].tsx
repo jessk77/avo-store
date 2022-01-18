@@ -15,8 +15,7 @@ const ProductPage = () => {
 
   return (
     <section>
-      <h1>Página producto: {query.id}</h1>
-      {product && <p>Avo: {product.name}</p>}
+      {product? <h1>Avo: {product.name}</h1> : <h3>Product not found</h3>}
     </section>
   )
 }
